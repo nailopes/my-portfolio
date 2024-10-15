@@ -1,0 +1,267 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "News Cycle", sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin:  auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    font-size: 20px;
+    transition: all 2.0s ease; 
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    color: black;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header .header-text {
+    display: inline-block;
+    font-size: 30px;
+    /* font-family: "News Cycle", sans-serif; */
+    font-family: "Jura", sans-serif;
+}
+
+header i {
+    padding: 5px 0;
+    font-size: 25px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About me styles */
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+    width: 50%;
+}
+
+.profile-image {
+    max-width: 40%; 
+    height: auto;     
+    object-fit: cover; 
+  }
+
+.bio{
+    font-family: "News Cycle", sans-serif;
+    font-size: 40px;
+}
+
+/* .about-me{
+    font-size: 50px;
+    font-family: "News Cycle", sans-serif;
+} */
+
+.fls{
+    color: #27a088;
+    font-weight: 300px;
+}
+
+.resume-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(235, 73, 230);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+.download-btn:hover {
+    background-color: rgba(235, 73, 230, 0.547);
+  }
+  
+.download-btn:active {
+    background-color: rgba(140, 24, 136, 0.584);
+  }
+
+/* About me text */
+#aboutText {
+   display: flex; 
+   flex-direction: row;
+
+}
+#aboutText img {
+    margin: 100px;
+}
+
+  /* Section styles */
+section {
+    padding: 50px 0;
+}
+
+#naiLopes { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55%;
+    font-size: 25px;
+    text-align: justify;
+}
+
+section#about {
+    padding: 0;
+    background-image: url(./img/triangle-background.jpg);
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section#projects {
+    background-color: #fff;
+}
+
+section#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+.project-card h2{
+    font-size: 40px;
+    text-align: center;
+    color: #6a8781;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+}
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Skills styles */
+.skills-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: #6a8781;
+    color: white;
+    padding: 5px 15px ;
+    border-radius: 20px;
+}
+
+/* Section titles */
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #888888;
+    color: white;
+    text-align: center;
+}
+
+section#contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#copyright {
+    background-color: #333;
+}
+
+/* Tablet Styles (Screen width 768px and below) */
+@media (max-width: 768px) {
+    body {
+      width: 95%;
+    }
+  
+    /* Adjust font sizes, element spacing, etc. */
+  }
+  
+  /* Mobile Styles (Screen width 480px and below) */
+  @media (max-width: 480px) {
+    body {
+      width: 100%;
+    }
+  
+    /* More significant layout changes, e.g., stacking elements vertically */
+  }
