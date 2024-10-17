@@ -28,7 +28,7 @@ h1 {
 header {
   z-index: 2;
   background-color: #f8f8f8;
-  font-size: 20px;
+  /* font-size: 20px; */
   transition: all 2s ease;
   position: fixed;
   display: flex;
@@ -53,7 +53,6 @@ header .container {
 header .header-text {
   display: inline-block;
   font-size: 30px;
-  /* font-family: "News Cycle", sans-serif; */
   font-family: "Jura", sans-serif;
 }
 
@@ -157,7 +156,7 @@ section {
   font-size: 25px;
   text-align: justify;
   padding-left: 60px;
-  padding-top: 60px;
+  margin: 2%;
 }
 
 #about {
@@ -229,8 +228,7 @@ section {
   column-gap: 10px;
   gap: 20px;
   padding: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-inline: 5%;
 }
 
 .grid-experience > div {
@@ -331,9 +329,13 @@ footer {
   text-align: center;
 }
 
-section#contact {
+#contact {
   display: flex;
   justify-content: flex-end;
+}
+
+#contact h2 {
+  margin: 10px 0px 0px 0px;
 }
 
 .social-icons {
@@ -388,18 +390,27 @@ section#contact {
   background-color: #333;
 }
 
+@media only screen and (max-width: 1024px) {
+  header .header-text {
+    display: none;
+  }
+}
+
 /* Tablet Styles (Screen width 768px and below) */
 @media only screen and (max-width: 768px) {
   body {
     width: 100%;
   }
-  header {
+  header .container {
     font-size: 10px;
+    justify-content: center;
   }
   header .header-text {
-    font-size: 20px;
+    display: none;
   }
-
+  #nav-icons {
+    display: none;
+  }
   #aboutMe {
     padding: 50px;
     padding-top: 100px;
@@ -417,6 +428,39 @@ section#contact {
   .download-btn {
     font-size: 15px;
   }
+  #experience p {
+    font-size: 10px;
+  }
+  #experience h3 {
+    font-size: 15px;
+  }
+  #experience h4 {
+    font-size: 12px;
+  }
+  .grid-experience {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    border-radius: 0 20px;
+  }
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    border-radius: 0 20px;
+  }
+  .item6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 14;
+    border-radius: 0 20px;
+  }
 }
 
 /* Mobile Styles (Screen width 480px and below) */
@@ -424,13 +468,14 @@ section#contact {
   body {
     width: 100%;
   }
-  header {
+  header .container {
     font-size: 10px;
+    justify-content: center;
   }
   header .header-text {
-    font-size: 20px;
+    display: none;
   }
-  header nav ul li {
+  #nav-icons {
     display: none;
   }
 
@@ -458,5 +503,38 @@ section#contact {
   #naiLopes {
     padding-left: 30px;
     padding-top: 30px;
+  }
+  #experience p {
+    font-size: 10px;
+  }
+  #experience h3 {
+    font-size: 15px;
+  }
+  #experience h4 {
+    font-size: 12px;
+  }
+  .grid-experience {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    border-radius: 0 20px;
+  }
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    border-radius: 0 20px;
+  }
+  .item6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 14;
+    border-radius: 0 20px;
   }
 }
